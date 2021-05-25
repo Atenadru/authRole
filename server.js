@@ -20,7 +20,7 @@ app.get("/admin", authUser, authRole(ROLE.ADMIN), (req, res) => {
   res.send("Admin Page");
 });
 
-//setUsuer intercepta req.body.userId y busca en la base de datos si un usuarioid coninside con id del req.body.userid de encontrarlo lo setea en el req.user y continua. la existencia de req.user es verificada en el middleware authUser.
+//setUsuer intercepta req.body.userId y busca en la base de datos si un usuarioid coninside con id del req.body.userid de encontrarlo lo setea en el req.user y continua. la existencia de req.user es verificada en el middleware authUser 🎡.
 function setUser(req, res, next) {
   const userId = req.body.userId;
   if (userId) {
