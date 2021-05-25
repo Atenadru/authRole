@@ -1,0 +1,17 @@
+
+
+GET http://localhost:3000/projects/
+content-Type:Application/json
+
+{
+    "userId":1
+}
+
+###
+
+DELETE  http://localhost:3000/projects/1
+content-Type:Application/json
+
+{
+    "userId":1
+}
